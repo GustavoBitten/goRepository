@@ -1,9 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
-const {
-  uuid
-} = require("uuidv4");
+const {  uuid  } = require("uuidv4");
 
 const app = express();
 
@@ -12,8 +10,6 @@ app.use(cors());
 
 var repositories = [];
 
-
-
 class Repository {
   constructor(id, title, url, techs, likes = 0) {
     this.id = id
@@ -21,7 +17,6 @@ class Repository {
     this.url = url
     this.techs = techs
     this.likes = likes
-
   }
 }
 
@@ -34,16 +29,10 @@ app.get("/repositories", (request, response) => {
 app.post("/repositories", (request, response) => {
 
   const id = uuid()
-  const {
-    title,
-    url,
-    techs
-  } = request.body
-
+  const { title, url, techs } = request.body
   const repository = new Repository(id, title, url, techs)
 
   response.status(201).json(repository)
-
   return repositories.push(repository)
 
 });

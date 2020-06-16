@@ -1,0 +1,182 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-06-16T04:50:52.170Z",
+    "__export_source": "insomnia.desktop.app:v7.1.1",
+    "resources": [{
+        "_id": "req_a925c9dc998a47ffb4eeb3b3b09f856f",
+        "authentication": {},
+        "body": {},
+        "created": 1592272733938,
+        "description": "",
+        "headers": [],
+        "isPrivate": false,
+        "metaSortKey": -1592272733940,
+        "method": "GET",
+        "modified": 1592272747075,
+        "name": "LIst",
+        "parameters": [],
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ base_url  }}repositories",
+        "_type": "request"
+    }, {
+        "_id": "wrk_45a689a89ea343a495673ed0c186db11",
+        "created": 1592272638110,
+        "description": "",
+        "modified": 1592272638110,
+        "name": "goRepository",
+        "parentId": null,
+        "_type": "workspace"
+    }, {
+        "_id": "req_57e72703cd564873a0e7c65d02caff0c",
+        "authentication": {},
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"title\":\"RepTeste\",\n\t\"url\":\"https://github.com/GustavoBitten/goRepository\",\n\t\"techs\": [\"node.js\",\"HTML\"]\n}"
+        },
+        "created": 1592272881320,
+        "description": "",
+        "headers": [{
+            "id": "pair_22eca01b79114a738e33c9d7ad5b66e6",
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "isPrivate": false,
+        "metaSortKey": -1592272733890,
+        "method": "POST",
+        "modified": 1592273016688,
+        "name": "Create",
+        "parameters": [],
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ base_url  }}repositories",
+        "_type": "request"
+    }, {
+        "_id": "req_605895ae5c7c4e91a22221784e6333ac",
+        "authentication": {},
+        "body": {},
+        "created": 1592277134547,
+        "description": "",
+        "headers": [],
+        "isPrivate": false,
+        "metaSortKey": -1592272733865,
+        "method": "POST",
+        "modified": 1592277156086,
+        "name": "AddLike",
+        "parameters": [],
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ base_url  }}repositories/9f009b2e-8232-4d3c-961d-a6df6dd42efa/like",
+        "_type": "request"
+    }, {
+        "_id": "req_2af6e3ae461246888be5076ff0da4025",
+        "authentication": {},
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"title\":\"RepMudou2\",\n\t\"url\":\"https://github.com/GustavoBitten/goRepository\",\n\t\"techs\": [\"node.js\",\"HTML\"]\n}"
+        },
+        "created": 1592273364154,
+        "description": "",
+        "headers": [{
+            "id": "pair_22eca01b79114a738e33c9d7ad5b66e6",
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "isPrivate": false,
+        "metaSortKey": -1592272733840,
+        "method": "PUT",
+        "modified": 1592274606518,
+        "name": "Put",
+        "parameters": [],
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ base_url  }}repositories/78257748-9634-4a73-b5d2-2b54b42827d3",
+        "_type": "request"
+    }, {
+        "_id": "req_64fc9d189d364b258f62c56c1e9f7641",
+        "authentication": {},
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"title\":\"RepMudou2\",\n\t\"url\":\"https://github.com/GustavoBitten/goRepository\",\n\t\"techs\": [\"node.js\",\"HTML\"]\n}"
+        },
+        "created": 1592276212296,
+        "description": "",
+        "headers": [{
+            "id": "pair_22eca01b79114a738e33c9d7ad5b66e6",
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "isPrivate": false,
+        "metaSortKey": -1592272733790,
+        "method": "DELETE",
+        "modified": 1592276247328,
+        "name": "Delete",
+        "parameters": [],
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ base_url  }}repositories/f89ab5a4-330f-4970-b48a-33072ff8adb4",
+        "_type": "request"
+    }, {
+        "_id": "env_03db5579aebe50f9aea1e9ca67d49047664b061f",
+        "color": null,
+        "created": 1592272638239,
+        "data": {},
+        "dataPropertyOrder": null,
+        "isPrivate": false,
+        "metaSortKey": 1592272638239,
+        "modified": 1592272638239,
+        "name": "Base Environment",
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "_type": "environment"
+    }, {
+        "_id": "jar_03db5579aebe50f9aea1e9ca67d49047664b061f",
+        "cookies": [],
+        "created": 1592272638246,
+        "modified": 1592272638246,
+        "name": "Default Jar",
+        "parentId": "wrk_45a689a89ea343a495673ed0c186db11",
+        "_type": "cookie_jar"
+    }, {
+        "_id": "env_239f34998acb4d29a605870e038bcb61",
+        "color": null,
+        "created": 1592272648786,
+        "data": {
+            "base_url": "http://localhost:3000/"
+        },
+        "dataPropertyOrder": {
+            "&": ["base_url"]
+        },
+        "isPrivate": false,
+        "metaSortKey": 1592272648786,
+        "modified": 1592272710724,
+        "name": "Test",
+        "parentId": "env_03db5579aebe50f9aea1e9ca67d49047664b061f",
+        "_type": "environment"
+    }]
+}
